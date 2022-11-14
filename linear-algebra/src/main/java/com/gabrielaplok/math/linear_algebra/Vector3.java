@@ -1,6 +1,6 @@
 package com.gabrielaplok.math.linear_algebra;
 
-public final class Vector3 implements Vector<Vector3> {
+public final class Vector3 {
 	public float x;
 	public float y;
 	public float z;
@@ -41,7 +41,6 @@ public final class Vector3 implements Vector<Vector3> {
 		return z;
 	}
 
-	@Override
 	public Vector3 set(Vector3 vector) {
 		this.x = vector.x;
 		this.y = vector.y;
@@ -56,7 +55,6 @@ public final class Vector3 implements Vector<Vector3> {
 		return this;
 	}
 
-	@Override
 	public Vector3 add(Vector3 vector) {
 		return set(
 			this.x + vector.x,
@@ -73,7 +71,6 @@ public final class Vector3 implements Vector<Vector3> {
 		);
 	}
 
-	@Override
 	public Vector3 sub(Vector3 vector) {
 		return set(
 			this.x - vector.x,
@@ -90,7 +87,6 @@ public final class Vector3 implements Vector<Vector3> {
 		);
 	}
 
-	@Override
 	public Vector3 negate() {
 		return set(-x, -y, -z);
 	}

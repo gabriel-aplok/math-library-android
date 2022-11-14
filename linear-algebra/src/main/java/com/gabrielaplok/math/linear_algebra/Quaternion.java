@@ -1,6 +1,6 @@
 package com.gabrielaplok.math.linear_algebra;
 
-public class Quaternion implements Vector<Quaternion> {
+public class Quaternion {
 	public float x;
 	public float y;
 	public float z;
@@ -50,7 +50,6 @@ public class Quaternion implements Vector<Quaternion> {
 		return w;
 	}
 
-	@Override
 	public Quaternion set(Quaternion vector) {
 		this.x = vector.x;
 		this.y = vector.y;
@@ -67,7 +66,6 @@ public class Quaternion implements Vector<Quaternion> {
 		return this;
 	}
 
-	@Override
 	public Quaternion add(Quaternion vector) {
 		return set(
 			this.x + vector.x,
@@ -86,7 +84,6 @@ public class Quaternion implements Vector<Quaternion> {
 		);
 	}
 
-	@Override
 	public Quaternion sub(Quaternion vector) {
 		return set(
 			this.x - vector.x,
@@ -105,7 +102,6 @@ public class Quaternion implements Vector<Quaternion> {
 		);
 	}
 
-	@Override
 	public Quaternion negate() {
 		return set(-x, -y, -z, -w);
 	}
