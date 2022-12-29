@@ -31,7 +31,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.gabriel-aplok:math-library-android:v1.0'
+    implementation 'com.github.gabriel-aplok:math-library-android:v0.0.1'
 }
 ```
 
